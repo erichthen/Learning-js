@@ -1,0 +1,91 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering main container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+}
+
+/* Main container styling */
+#main-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels and inputs styling */
+label {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+    font-size: 14px;
+}
+
+#length {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Generate and Copy button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate-button {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+#generate-button:hover {
+    background-color: #45a049;
+}
+
+#copy-button {
+    background-color: #2196F3;
+    color: #ffffff;
+    display: none; /* Hidden by default */
+}
+
+#copy-button:hover {
+    background-color: #1e88e5;
+}
+
+/* Password display styling */
+#password {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    word-break: break-all; /* Prevent overflow for long passwords */
+}

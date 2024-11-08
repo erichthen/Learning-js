@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 66vh;
+    background-color: black;
+}
+
+#main-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px 20px;
+    max-width: 400px;
+    border: 5px solid salmon;
+    border-radius: 5px;
+}
+
+#enter-text {
+    margin-bottom: -10px;
+}
+
+#outer-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px; /* Adds space between each radio input */
+    align-items: center
+}
+
+p {
+    font-weight: bold;
+}
+
+h1 {
+    font-size : 25px;
+    margin-top: -10px;
+    color: black;
+    text-shadow: -1px -1px 0 salmon, 1px -1px 0 salmon, -1px 1px 0 salmon, 1px 1px 0 salmon;
+}
+
+#result {
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+#textInput {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 20%;
+    border: 2px solid salmon;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: salmon;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: -10px;
+}

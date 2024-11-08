@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1 id="header">Number Guessing Game</h1>
+        <div id="setup-container">
+            <p id="welcome-text">Welcome. First, enter the range of numbers and the amount of attempts you want.</p>
+            <input type="text" id="min-input" class="setup-inputs" placeholder="Minimum">
+            <input type="text" id="max-input" class="setup-inputs" placeholder="Maximum">
+            <input type="text" id="attempts-input" class="setup-inputs" placeholder="Attempt count">
+            <button id="begin-button">Begin</button>
+        </div>
+        <div id="game-container">
+            <p id="instruction" style="display: none"></p>
+            <input type="text" id="guess-input" style="display: none">
+            <br>
+            <button id="guess-button" style="display: none">Make Guess</button>
+            <p id="result"></p>
+            <h4 id="correct-number" style="display: none"></h4>
+            <p id="attempts-remaining"></p>
+            <button id="play-again-button" style="display: none">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

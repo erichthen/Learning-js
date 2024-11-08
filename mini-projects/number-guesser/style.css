@@ -1,0 +1,119 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center body content */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: #333;
+}
+
+/* Main container styling */
+#main-container {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+#header {
+    color: #ff5e62;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Styling for setup and game containers */
+.setup-inputs, #guess-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#welcome-text {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#begin-button {
+    background: #ff5e62;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+#guess-button {
+    background: #ff5e62;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 45px;
+}
+
+#begin-button:hover, #guess-button:hover {
+    background: #ff9966;
+}
+
+#play-again-button {
+    background-color: #ff5e62;
+    margin-top: 35px;
+    margin-left: 45px;
+    color: #fff;
+}
+
+/* Styling for messages and feedback */
+#instruction, #result, #correct-number, #attempts-remaining {
+    margin-top: 40px;
+    font-size: 1.1em;
+}
+
+#result {
+    color: #ff5e62;
+    font-weight: bold;
+}
+
+#correct-number {
+    color: #ff5e62;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#attempts-remaining {
+    color: #333;
+}
+
+/* Hide #game-container by default */
+#game-container {
+    display: none
+}
+
+input {
+    text-align: center;
+}
+
+/* For smoother transitions */
+button, input {
+    transition: 0.3s;
+}
