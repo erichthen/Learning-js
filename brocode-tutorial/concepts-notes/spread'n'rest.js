@@ -5,7 +5,7 @@
 
 let numbers = [1, 2, 3, 4, 5];
 let max = Math.max(numbers);
-//console.log(Math.max(...numbers));  //NaN. But, we can use the spread to unpack the array into individual elements
+//console.log(Math.max(numbers));  //NaN. But, we can use the spread to unpack the array into individual elements
 let min = Math.min(...numbers);
 
 let user = "geekbarpulse";
@@ -64,4 +64,8 @@ function combineStrings(...strings) {
 
 const fullname = combineStrings("geek", "bar", "pulse");
 //console.log(fullname);
+
+
+
+
 
