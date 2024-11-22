@@ -14,35 +14,33 @@ let isRunning = false;
 function startWatch() {
     if (!isRunning) {
         startTime = Date.now() - elapsedTime;
-        timer = setInterval(updateWatch, 10)
+        timer = setInterval(updateWatch, 10);
+        isRunning = true;
     }
-    console.log(startTime);
 }
 
 function stopWatch() {
     if (isRunning) {
         clearInterval(timer);
-        elapsedTime = Date.now() - startTime;
+        isRunning = false;
     }
 }
 
 function resetWatch() {
-
+    elapsedTime = 0;
+    clearInterval(timer);
+    isRunning = false;
+    display.textContent = "00:00:00:00";
 }
 
 function updateWatch() {
-    const currentTime = Date.now();
+    const currentTime = Date.now()
     elapsedTime = currentTime - startTime;
-    
-    let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
-    let minutes = Math.floor(elapsedTime / (1000 * 60) % 60);
-    let seconds = Math.floor(elapsedTime / 1000 % 60);
-    let milliseconds = Math.floor(elapsedTime % 1000 / 10);
 
-    hours = String(hours).padStart(2, "0");
-    minutes = String(minutes).padStart(2, "0");
-    seconds = String(seconds).padStart(2, "0");
-    milliseconds = String(milliseconds).padStart(2, "0");
+    let hours = String(Math.floor(elapsedTime / (1000 * 60 * 60))).padStart(2, "0");
+    let minutes = String(Math.floor(elapsedTime / (1000 * 60) % 60)).padStart(2, "0");
+    let seconds = String(Math.floor(elapsedTime / 1000 % 60)).padStart(2, "0");
+    let milliseconds = String(Math.floor(elapsedTime % 1000 / 10)).padStart(2, "0");
 
     display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
 }

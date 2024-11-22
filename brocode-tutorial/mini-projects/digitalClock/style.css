@@ -1,0 +1,32 @@
+html, body {
+    background-image: url(nyc.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100%;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#clock {
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#period {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 81px;
+    margin-left: 20px;
+}
