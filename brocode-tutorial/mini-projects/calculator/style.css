@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+#container {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(235, 187, 212);
+}
+
+#display {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 25px;   
+    max-width: 300px;
+    padding: 30px;
+    background-color: rgb(214, 241, 248);
+    height: 20px;
+    font-size: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#display-span {
+    position: relative;
+    bottom: 17px;
+    right: 12px;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+}
+
+button {
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.operator-button {
+    border-radius: 5px;
+    font-size: 40px;
+    padding: 5px;
+    background-color: rgb(183, 145, 229);
+}
+
+.clear-buttons {
+    background-color: rgb(207, 132, 132);
+}
+
+#asterisk{
+    position: relative;
+    top: 10px;
+}
+
+#decimal-span {
+    position: relative;
+    font-size: 46px;
+}
+
+#decimal {
+    padding: 5px;
+}
+
+#equals {
+    padding: 5px;
+}
+
+#equals-span {
+    font-size: 25px;
+}
+
+#right-par {
+    padding: 5px;
+}
+
+#right-par-span {
+    font-size: 25px;
+}
+
+#left-par {
+    padding: 5px;
+}
+
+#left-par-span {
+    font-size: 25px;
+}

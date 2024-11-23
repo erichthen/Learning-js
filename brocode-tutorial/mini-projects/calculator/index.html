@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="display">
+            <span id="display-span"></span>
+        </div>
+        <div id="buttons-container">
+            <button id="+" class="operator-button" onclick="addToDisplay('+')">+</button>
+            <button id="-" class="operator-button" onclick="addToDisplay('-')">-</button>
+            <button id="multButton" class="operator-button" onclick="addToDisplay('*')">
+                <span id="asterisk">*</span>
+            </button>
+            <button id="÷" class="operator-button" onclick="addToDisplay('÷')">÷</button>
+            <button id="0" class="number-button" onClick="addToDisplay('0')">0</button>
+            <button id="1" class="number-button" onClick="addToDisplay('1')">1</button>
+            <button id="2" class="number-button" onClick="addToDisplay('2')">2</button>
+            <button id="3" class="number-button" onClick="addToDisplay('3')">3</button>
+            <button id="4" class="number-button" onClick="addToDisplay('4')">4</button>
+            <button id="5" class="number-button" onClick="addToDisplay('5')">5</button>
+            <button id="6" class="number-button" onClick="addToDisplay('6')">6</button>
+            <button id="7" class="number-button" onClick="addToDisplay('7')">7</button>
+            <button id="8" class="number-button" onClick="addToDisplay('8')">8</button>
+            <button id="9" class="number-button" onClick="addToDisplay('9')">9</button>
+            <button id="clear-all-button" class="clear-buttons" onClick="clearAll()">AC</button>
+            <button id="clear-last-button" class="clear-buttons" onClick="clearLast()">CE</button>
+            <button id="decimal" onclick="addToDisplay('.')">
+                <span id="decimal-span">.</span>
+            </button>
+            <button id="equals" onclick="calculate()">
+                <span id="equals-span">=</span>
+            </button>
+            <button id="left-par" onclick="addToDisplay('(')">
+                <span id="left-par-span">(</span>
+            </button>
+            <button id="right-par" onclick="addToDisplay(')')">
+                <span id="right-par-span">)</span>
+            </button>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
