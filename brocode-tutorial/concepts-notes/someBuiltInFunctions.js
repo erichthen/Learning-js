@@ -28,8 +28,8 @@ function double(element, index, array) {
     array[index] = element * 2;
 }
 
-// numbers.forEach(double);
-// numbers.forEach(display);
+numbers.forEach(double);
+numbers.forEach(display);
 
 
 
