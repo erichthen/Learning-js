@@ -24,7 +24,7 @@ class Erich {
 
     static printWealth() {
         if (this.isRich === true) {
-            console.log(`erich is rich with a balance of ${this.balance}`);
+            console.log(`erich is rich with a balance of $${this.balance}`);
         }
         else {
             console.log(`erich is broke with a balance of $${this.balance}`);
@@ -47,10 +47,10 @@ class Erich {
     }
 }
 
-// Erich.printWealth();
-// Erich.addCheckToAccount(20000);
-// Erich.setRichStatus()
-// Erich.printWealth();
+Erich.printWealth();
+Erich.addCheckToAccount(20000);
+Erich.setRichStatus()
+Erich.printWealth();
 
 
 

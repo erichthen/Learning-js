@@ -10,6 +10,24 @@
 // 4. document.querySelector()             // ELEMENT OR NULL
 // 5. document.querySelectorAll()          // NODELIST
 
+//WHEN TO USE WHICH? 
+
+// Use querySelector / querySelectorAll
+
+// 	•	When you need flexibility with CSS selectors (e.g., .class, #id, tag, attribute selectors, or combinations like .class ul li).
+// 	•	When you want to select specific or complex elements (e.g., nested elements, attributes, pseudo-classes).
+// 	•	When you prefer a static NodeList (querySelectorAll) or to select the first matching element (querySelector).
+
+
+// Use getElementById, getElementsByClassName, or getElementsByTagName
+
+// 	•	When you want performance: These methods are slightly faster for simpler selections.
+// 	•	When selecting by:
+// 	•	ID: Use getElementById (fastest, and returns one element).
+// 	•	Class name: Use getElementsByClassName.
+// 	•	Tag name: Use getElementsByTagName.
+// 	•	When you need a live collection that updates dynamically with DOM changes.
+
 
 
 // 1. ***** document.getElementById() *****
@@ -153,21 +171,5 @@ foods.forEach(food => {
 
  
 
-//WHEN TO USE WHICH? 
 
-// Use querySelector / querySelectorAll
-
-// 	•	When you need flexibility with CSS selectors (e.g., .class, #id, tag, attribute selectors, or combinations like .class ul li).
-// 	•	When you want to select specific or complex elements (e.g., nested elements, attributes, pseudo-classes).
-// 	•	When you prefer a static NodeList (querySelectorAll) or to select the first matching element (querySelector).
-
-
-// Use getElementById, getElementsByClassName, or getElementsByTagName
-
-// 	•	When you want performance: These methods are slightly faster for simpler selections.
-// 	•	When selecting by:
-// 	•	ID: Use getElementById (fastest, and returns one element).
-// 	•	Class name: Use getElementsByClassName.
-// 	•	Tag name: Use getElementsByTagName.
-// 	•	When you need a live collection that updates dynamically with DOM changes.
 

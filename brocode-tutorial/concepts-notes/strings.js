@@ -58,14 +58,14 @@ for (let i = 0; i < names.length; i++) {
    // console.log(nameFormatter(names[i]));
 }
 
-const emails = ["erich.then2@gmail.com", "kelli.b.then@gmail.com", "bromigo@yahoo.com", "dequarius@hoodlum.com"];
+const emails = ["erich.then2@gmail.com", "erich.then@gmail.com", "bromigo@yahoo.com", "saquonemail.com"];
 
 function mapUserDomain (emails) {
     let userDomainMap = new Map();
 
     emails.forEach(email => {
         if (!email.includes("@") || !email.includes(".com")) {
-            // console.log(`${email} is not a valid email`);
+            console.log(`${email} is not a valid email`);
             return;
         }
         const [username, domain] = email.split('@');
