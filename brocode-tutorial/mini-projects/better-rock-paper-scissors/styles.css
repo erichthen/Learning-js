@@ -1,0 +1,97 @@
+body {
+    font-family: "arial";
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: hsl(0, 0%, 30%);
+}
+
+h3 {
+    color: hsl(0, 0%, 30%);
+}
+
+.player-choices-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.player-choices-container button {
+    font-size: 5rem;
+    min-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#computer-choice-circle {
+    position: relative;
+    font-size: 5rem;
+    min-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(113, 33, 33); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+#computer-choice-span {
+    position: relative;
+    top: 24px;
+    left: 35px;
+}
+
+#computer-message {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+.player-choices-container button:hover {
+    background-color: rgb(185, 169, 147);
+}
+
+#playgame {
+    padding: 15px 25px;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: hsl(0, 0%, 30%);
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.5s ease;
+}
+
+#playgame:hover {
+    background-color: black;
+}
+
+
+#scores {
+    margin-left: 15px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.player-choices-container button.selected {
+    background-color: hsl(228, 52%, 52%);
+}
+
+#result-message {
+    margin-top: 40px;
+}
+

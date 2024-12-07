@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rock - Paper - Scissors</h1>
+    <h3 id="choose-message">Choose your move</h3>
+    <div class="player-choices-container">
+        <button id="user-rock-button" onclick="highlightUserSelection('user-rock-button');">
+            <span id="rock-button-span">🪨</span>
+        </button>
+        <button id="user-paper-button" onclick="highlightUserSelection('user-paper-button')">
+            <span id="paper-button-span">📄</span>
+        </button>
+        <button id="user-scissors-button" onclick="highlightUserSelection('user-scissors-button')">
+            <span id="scissors-button-span">✂️</span>
+        </button>
+    </div>
+    <button id="playgame" style="display: none">Play</button>
+    <h3 id="computer-message" style="display: none">Computer</h3>
+    <div id="computer-choice-circle" style="display: none">
+        <span id="computer-choice-span"></span>
+    </div>
+    <h3 id="result-message" style="display:none"></h3>
+    <div id="scores">
+        <h3 id="user-score">Your score: 0</h3>
+        <h3 id="computer-score">Computer score: 0</h3>
+    </div>
+    <h3 id="play-again-message" style="display:none">Choose a new (or the same) choice and click play to play again</h3>
+    <script src="index.js"></script>
+</body>
+</html>
