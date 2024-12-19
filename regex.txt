@@ -182,8 +182,10 @@ and are not literals
 Applied after the closing delimiter (e.g., /pattern/i)
 	1. i: Case-insensitive matching.
     	ex. /cat/i matches “cat” and “CAT”.
+
 	2. g: Global matching (find all matches).
 		ex.  /a/g matches every “a” in “banana”.
+		
 	3. m: Multi-line matching. Makes ^ and $ match at line breaks.
 		ex. /^foo/m matches “foo” at the start of each line.
 
